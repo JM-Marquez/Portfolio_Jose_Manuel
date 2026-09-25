@@ -42,11 +42,13 @@
             <button
     class="navbar-toggler"
     type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#mainMenu"
     aria-controls="mainMenu"
     aria-expanded="false"
     aria-label="Abrir menú">
 
-    <span class="navbar-toggler-icon"></span>
+    <i class="bi bi-list"></i>
 
 </button>
 
@@ -127,7 +129,7 @@
                     </span>
 
                     <span class="hero-black d-block">
-                        SysAdmin | Cybersecurity
+                        SysAdmin | Cyberseguridad
                     </span>
 
                 </h1>
@@ -161,7 +163,7 @@
 
 
                     <a
-    href="./assets/CV-Jose-Manuel.pdf"
+    href="./assets/CV_Jose_Manuel_Marquez.pdf"
     class="btn btn-cv btn-lg rounded-pill px-4 fw-bold"
     download>
 
@@ -223,9 +225,9 @@
 <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-start mb-4">
 
     <h2 class="fw-bold fs-1 text-center text-lg-start">
-        My
+        Mis
         <span class="brand-color">
-            Services
+            Servicios
         </span>
     </h2>
 
@@ -316,7 +318,7 @@ Cloud
 
 <p class="text-secondary small">
 
-AWS , Azure, docker, APIs REST.
+AWS , docker.
 
 </p>
 
@@ -481,7 +483,7 @@ onclick="openProjectModal('p3')"
 
 <img 
 
-src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop"
+src="assets/trastero7.png"
 
 class="img-fluid rounded-4"
 
@@ -533,14 +535,14 @@ alt="Proyecto"
 
 <h3 class="h4 fw-bold mt-3 brand-color">
 
-En construcción
+Proyecto cloud en construcción.
 
 </h3>
 
 
 <p class="text-secondary">
 
-En construcción.
+En construcción
 
 </p>
 
@@ -576,7 +578,7 @@ alt="Proyecto"
 
 <h3 class="h4 fw-bold mt-3">
 
-En construcción
+Proyecto ciberseguridad en construcción.
 
 </h3>
 
@@ -609,126 +611,209 @@ En construcción.
 
 
 <!-- =========================
-        MODAL
+        MODAL PROYECTOS
 ========================= -->
 
+<div
+    class="modal fade"
+    id="projectModal"
+    tabindex="-1"
+    aria-hidden="true">
 
-<div class="modal fade" id="projectModal">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+
+        <div class="modal-content dark-modal">
+
+            <!-- =========================
+                    BOTÓN CERRAR
+            ========================= -->
+
+            <button
+                type="button"
+                class="btn-close btn-close-white modal-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar">
+
+            </button>
 
 
-<div class="modal-dialog modal-xl modal-dialog-centered">
+            <!-- =========================
+                    CONTENIDO
+            ========================= -->
+
+            <div class="modal-body p-4 p-lg-5">
+<div class="row g-4">
+
+    <!-- =========================
+            TÍTULO
+    ========================= -->
+
+    <div class="col-12">
+
+        <h2
+            id="modalTitle"
+            class="modal-project-title">
+
+        </h2>
+
+    </div>
 
 
-<div class="modal-content dark-modal p-4">
+    <!-- =========================
+            GALERÍA Y TAGS
+    ========================= -->
+
+    <div class="col-lg-7">
+
+        <!-- TAGS -->
+
+        <div
+            id="modalTags"
+            class="modal-project-tags">
+
+        </div>
 
 
+        <div class="project-gallery">
 
-<div class="modal-header border-0">
+            <!-- IMAGEN -->
+
+            <div class="gallery-image-wrapper">
+
+                <img
+                    id="modalImage"
+                    class="gallery-main-image"
+                    src=""
+                    alt="">
 
 
-<div id="modalTags"></div>
+                <!-- CONTADOR -->
+
+                <div
+                    id="galleryCounter"
+                    class="gallery-counter">
+
+                    1 / 1
+
+                </div>
 
 
+                <!-- FLECHA ANTERIOR -->
 
-<button 
-class="btn-close btn-close-white"
-data-bs-dismiss="modal">
+                <button
+                    id="galleryPrev"
+                    class="gallery-arrow gallery-prev"
+                    type="button"
+                    aria-label="Imagen anterior">
 
-</button>
+                    <i class="bi bi-arrow-left"></i>
 
+                </button>
+
+
+                <!-- FLECHA SIGUIENTE -->
+
+                <button
+                    id="galleryNext"
+                    class="gallery-arrow gallery-next"
+                    type="button"
+                    aria-label="Imagen siguiente">
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- DESCRIPCIÓN DE LA IMAGEN -->
+
+            <div
+                id="galleryCaption"
+                class="gallery-caption">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+            INFORMACIÓN
+    ========================= -->
+
+    <div class="col-lg-5">
+
+        <!-- DESCRIPCIÓN -->
+
+        <p
+            id="modalDescription"
+            class="text-secondary modal-project-description">
+
+        </p>
+
+
+        <!-- PASOS -->
+
+        <div class="project-steps">
+
+            <h4>
+
+                <i class="bi bi-list-check me-2"></i>
+
+                Pasos del proyecto
+
+            </h4>
+
+
+            <ul id="modalFeatures">
+
+            </ul>
+
+        </div>
+
+
+        <!-- BOTONES -->
+
+        <div
+            class="modal-project-buttons mt-4">
+
+            <a
+                id="modalLiveDemo"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-pastel rounded-pill px-4">
+
+                <i class="bi bi-globe2 me-2"></i>
+
+                Ver web
+
+            </a>
+
+
+            <a
+                id="modalGithub"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline-light rounded-pill px-4">
+
+                <i class="bi bi-github me-2"></i>
+
+                GitHub
+
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
-
-
-
-
-<div class="modal-body">
-
-
-<div class="row align-items-center g-4">
-
-
-
-<div class="col-lg-7">
-
-
-<img 
-    id="modalImage"
-    src="assets/imagen_SysCore.png"
-    alt="Imagen del proyecto"
-    class="img-fluid rounded-5">
-
-
 </div>
-
-
-
-
-<div class="col-lg-5">
-
-
-<h2 id="modalTitle">Proyecto</h2>
-
-
-<p id="modalDescription"
-class="text-secondary">
-
-</p>
-
-
-
-
-
-<ul id="modalFeatures"></ul>
-
-<div class="d-flex flex-wrap gap-2 mt-3">
-
-    <!-- WEB -->
-    <a
-        id="modalLiveDemo"
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-pastel rounded-pill px-3 py-2 d-inline-flex align-items-center gap-2">
-
-        <i class="bi bi-globe2 fs-5"></i>
-        Ver web
-
-    </a>
-
-
-    <!-- GITHUB -->
-    <a
-        id="modalGithub"
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-outline-light rounded-pill px-3 py-2 d-inline-flex align-items-center gap-2">
-
-        <i class="bi bi-github fs-5"></i>
-        Ver en GitHub
-
-    </a>
-
 </div>
-
-
-
 </div>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
 </div>
 
 <!-- =========================
@@ -757,53 +842,62 @@ class="text-secondary">
 
             <div class="col-lg-8">
 
-                <form>
+                <form action="https://formspree.io/f/mljdnoae" method="POST">
 
-                    <div class="row g-3">
+    <div class="row g-3">
 
-                        <div class="col-md-6">
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nombre">
-                        </div>
+        <div class="col-md-6">
+            <input
+                type="text"
+                name="nombre"
+                class="form-control"
+                placeholder="Nombre"
+                required>
+        </div>
 
-                        <div class="col-md-6">
-                            <input
-                                type="email"
-                                class="form-control"
-                                placeholder="Correo electrónico">
-                        </div>
+        <div class="col-md-6">
+            <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Correo electrónico"
+                required>
+        </div>
 
-                        <div class="col-12">
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Asunto">
-                        </div>
+        <div class="col-12">
+            <input
+                type="text"
+                name="asunto"
+                class="form-control"
+                placeholder="Asunto"
+                required>
+        </div>
 
-                        <div class="col-12">
-                            <textarea
-                                class="form-control"
-                                placeholder="Escribe tu mensaje..."></textarea>
-                        </div>
+        <div class="col-12">
+            <textarea
+                name="mensaje"
+                class="form-control"
+                placeholder="Escribe tu mensaje..."
+                rows="5"
+                required></textarea>
+        </div>
 
-                        <div class="col-12 text-center">
+        <div class="col-12 text-center">
 
-                            <button
-                                type="submit"
-                                class="btn btn-pastel btn-lg rounded-pill px-5">
+            <button
+                type="submit"
+                class="btn btn-pastel btn-lg rounded-pill px-5">
 
-                                Enviar mensaje
-                                <i class="bi bi-send-fill ms-2"></i>
+                Enviar mensaje
+                <i class="bi bi-send-fill ms-2"></i>
 
-                            </button>
+            </button>
 
-                        </div>
+        </div>
 
-                    </div>
+    </div>
 
-                </form>
+</form>
 
             </div>
 
@@ -839,7 +933,7 @@ class="text-secondary">
 
             <p class="footer-copy">
 
-                Designed & Developed by <strong>José Manuel</strong>
+                Diseñado y desarrollado por <strong>José Manuel</strong>
 
             </p>
 
@@ -854,7 +948,7 @@ class="text-secondary">
 
                 </a>
 
-                <a href="https://linkedin.com" target="_blank">
+                <a href="https://www.linkedin.com/in/jm-marquezh" target="_blank">
 
                     <i class="bi bi-linkedin"></i>
 
