@@ -202,7 +202,105 @@ const projectsData = {
 
         githubUrl: "#"
 
-    }
+    },
+
+    
+
+p4: {
+
+    title: "Infraestructura Cloud con AWS",
+
+    description:
+        "Diseño e implementación de una arquitectura cloud basada en servicios AWS, utilizando un enfoque serverless para desplegar una API y gestionar los datos de una aplicación web. Proyecto desarrollado en AWS Academy Learner Lab, integrando servicios de computación, almacenamiento, seguridad, monitorización e infraestructura como código. La plataforma web actúa como aplicación de demostración de los servicios desplegados.",
+
+    images: [
+
+        "./assets/lambda.png",
+
+        "./assets/api-rutas.png",
+
+        "./assets/dynamodb-tabla.png",
+
+        "./assets/cloudformation-eventos.png",
+
+        "./assets/cloudwatch-eventos.png",
+
+        "./assets/iam-permisos.png",
+
+        "./assets/laboratorios.png"
+
+    ],
+
+    imageCaptions: [
+
+        "AWS Lambda: funciones serverless para ejecutar la lógica del backend.",
+
+        "Amazon API Gateway: configuración de rutas y métodos HTTP de la API.",
+
+        "Amazon DynamoDB: tabla utilizada para la persistencia de datos.",
+
+        "AWS CloudFormation: gestión de recursos e infraestructura desplegada.",
+
+        "Amazon CloudWatch: consulta de registros y monitorización de ejecuciones.",
+
+        "AWS IAM: gestión de roles y permisos de acceso a los servicios.",
+
+        "Aplicación web desarrollada para demostrar la integración y el funcionamiento de los servicios AWS."
+
+    ],
+
+    tags: [
+
+        '<i class="bi bi-cloud-fill"></i> Amazon Web Services',
+
+        '<i class="bi bi-boxes"></i> AWS Lambda',
+
+        '<i class="bi bi-diagram-3-fill"></i> API Gateway',
+
+        '<i class="bi bi-database-fill"></i> DynamoDB',
+
+        '<i class="bi bi-shield-lock-fill"></i> IAM',
+
+        '<i class="bi bi-activity"></i> CloudWatch',
+
+        '<i class="bi bi-stack"></i> CloudFormation',
+
+        '<i class="bi bi-code-slash"></i> AWS CDK',
+
+        '<i class="bi bi-envelope-fill"></i> Brevo',
+
+        '<i class="bi bi-globe"></i> Cloudflare Pages'
+
+    ],
+
+    features: [
+
+        "Diseño y despliegue de una arquitectura serverless en AWS.",
+
+        "Creación de una API HTTP mediante Amazon API Gateway.",
+
+        "Desarrollo y despliegue de funciones AWS Lambda con Node.js 22.",
+
+        "Configuración de Amazon DynamoDB para el almacenamiento de datos.",
+
+        "Gestión de roles y permisos mediante AWS IAM.",
+
+        "Monitorización y consulta de registros con Amazon CloudWatch.",
+
+        "Gestión de infraestructura mediante AWS CDK y CloudFormation.",
+
+        "Integración de Brevo para el envío de correos de verificación.",
+
+        "Publicación del frontend mediante Cloudflare Pages."
+
+    ],
+
+    demoUrl: "https://aula-de-sistemas-aws.pages.dev/",
+
+    githubUrl: "https://github.com/JM-Marquez/Aula-de-Sistemas-AWS"
+
+},
+
 
 };
 
