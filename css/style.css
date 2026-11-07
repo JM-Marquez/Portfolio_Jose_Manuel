@@ -1005,20 +1005,12 @@ body {
 ========================== */
 
 .soft-skill-card {
-
     height: 100%;
     background: var(--card-dark);
     border: 1.5px solid #2A2A2A;
     border-radius: 1.5rem;
     padding: 1.5rem;
 
-    transition:
-        transform .3s ease,
-        border-color .3s ease;
-
-}
-
-.soft-skill-card {
     transition:
         transform .3s ease,
         border-color .3s ease,
@@ -1028,8 +1020,10 @@ body {
 .soft-skill-card:hover {
     transform: translateY(-6px);
     border-color: var(--pastel-orange);
-    background:var(--card-dark-hover);
+    background: var(--card-dark-hover);
 }
+
+/* TEXTO */
 
 .text-brand {
     color: var(--pastel-orange) !important;
@@ -1038,20 +1032,15 @@ body {
 /* ICONOS */
 
 .soft-skill-icon {
-
     width: 48px;
     height: 48px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 13px;
     background: rgba(255, 255, 255, 0.06);
-
     font-size: 1.5rem;
     color: var(--pastel-orange);
-
 }
 
 
